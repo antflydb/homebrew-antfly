@@ -11,18 +11,21 @@ cask "antflycli" do
   binary "antflycli"
 
   on_macos do
-    url "https://github.com/antflydb/antfly/releases/download/v0.0.0-dev2/antfly_0.0.0-dev2_Darwin_all.tar.gz"
-    sha256 "1bc7c30b58c1e4a47f62fc994d0e4bd8c4bd395962c3c3d0abd4d9f334e1a58b"
+    url "https://github.com/antflydb/antfly/releases/download/v0.0.0-dev2/antfly_0.0.0-dev2_Darwin_all.tar.gz",
+        verified: "github.com/antflydb/antfly"
+    sha256 "071feb01f96c20c873a3055a79e8e89214adc4b0d0aa5dbf972a265175587967"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/antflydb/antfly/releases/download/v0.0.0-dev2/antfly_0.0.0-dev2_Linux_x86_64.tar.gz"
-      sha256 "3c6b5fb3d33210e29d477831b87dc23f4b7247c1e4b5715e560dcdbd7821cf3b"
+      url "https://github.com/antflydb/antfly/releases/download/v0.0.0-dev2/antfly_0.0.0-dev2_Linux_x86_64.tar.gz",
+        verified: "github.com/antflydb/antfly"
+      sha256 "c895ba0d71849cd8c8b3fa207b1eb71590971381d63b2a00bf4a2cfb384d788f"
     end
     on_arm do
-      url "https://github.com/antflydb/antfly/releases/download/v0.0.0-dev2/antfly_0.0.0-dev2_Linux_arm64.tar.gz"
-      sha256 "b8ee0910869cbf61b82cf6bed1a95cf5af925e21d034eed2272c921c3a509b7e"
+      url "https://github.com/antflydb/antfly/releases/download/v0.0.0-dev2/antfly_0.0.0-dev2_Linux_arm64.tar.gz",
+        verified: "github.com/antflydb/antfly"
+      sha256 "03da26a6e4aecafbbd43af06a183b47068c8bdc40c6845b113fc11e63f9a19f4"
     end
   end
 
@@ -33,6 +36,12 @@ cask "antflycli" do
     output = Utils.popen_read("SHELL=zsh #{bin}/antflycli completion zsh")
     (zsh_completion/"_antflycli").write output
     prefix.install_metafiles
+  end
+
+  postflight do
+    if OS.mac?
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/antflycli"]
+    end
   end
 
   # No zap stanza required
