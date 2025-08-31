@@ -22,11 +22,11 @@ jobs:
         product:
           - antfly
           - antflycli
-    name: ${{ matrix.product }} formula tests (${{ matrix.os }})
+    name: ${{ matrix.product }} cask tests (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-      - name: Install ${{ matrix.product }} formula
-        run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} install ./Formula/${{matrix.product }}.rb
-      - name: test ${{ matrix.product }} formula
-        run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} test ./Formula/${{ matrix.product }}.rb
+      - name: Install ${{ matrix.product }} cask
+        run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} install ./Casks/${{matrix.product }}.rb
+      - name: Test ${{ matrix.product }} cask
+        run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} test ./Casks/${{ matrix.product }}.rb
