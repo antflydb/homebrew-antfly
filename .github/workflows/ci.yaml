@@ -26,7 +26,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
+      - name: Tap antflydb/antfly
+        run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} tap antflydb/antfly .
       - name: Install ${{ matrix.product }} cask
-        run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} install ./Casks/${{matrix.product }}.rb
+        run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} install --cask ./Casks/${{matrix.product }}.rb
       - name: Test ${{ matrix.product }} cask
-        run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} test ./Casks/${{ matrix.product }}.rb
+        run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} test --cask ./Casks/${{ matrix.product }}.rb
