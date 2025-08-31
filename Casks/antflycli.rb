@@ -11,21 +11,18 @@ cask "antflycli" do
   binary "antflycli"
 
   on_macos do
-    url "https://github.com/antflydb/antfly/releases/download/v0.0.0-dev2/antfly_0.0.0-dev2_Darwin_all.tar.gz",
-        verified: "github.com/antflydb/antfly"
-    sha256 "7b8e89f22366febf807768d1eb18905b94d569f5a1e854cb1d9ab524401af8c2"
+    url "https://releases.antfly.io/antfly/v0.0.0-dev2/antfly_0.0.0-dev2_Darwin_all.tar.gz"
+    sha256 "4b49c5df75f800df5a807893f01ef069324305edea07f499e62a66978c1599d3"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/antflydb/antfly/releases/download/v0.0.0-dev2/antfly_0.0.0-dev2_Linux_x86_64.tar.gz",
-        verified: "github.com/antflydb/antfly"
-      sha256 "16a83b64ef1ad1701811e8d50e8504642ae48188a50205c4a69c4c3afd6904ee"
+      url "https://releases.antfly.io/antfly/v0.0.0-dev2/antfly_0.0.0-dev2_Linux_x86_64.tar.gz"
+      sha256 "066c18986c996cd7db5b7ffa287a99aa7b9cdd8e83a6852e00c8c154e60cffed"
     end
     on_arm do
-      url "https://github.com/antflydb/antfly/releases/download/v0.0.0-dev2/antfly_0.0.0-dev2_Linux_arm64.tar.gz",
-        verified: "github.com/antflydb/antfly"
-      sha256 "c2a7d63721b118ef1a3d930a26eb9f6e8d97854bdd88ad425a833cece750340d"
+      url "https://releases.antfly.io/antfly/v0.0.0-dev2/antfly_0.0.0-dev2_Linux_arm64.tar.gz"
+      sha256 "381fe3144ad8802455b015f6d8e06c8d78dbc00322f594b768ef809b58eb6ebf"
     end
   end
 
