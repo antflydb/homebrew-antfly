@@ -1,0 +1,14 @@
+.aider*
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Testing
+*.test
+*.tmp
