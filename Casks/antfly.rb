@@ -12,23 +12,20 @@ cask "antfly" do
   bash_completion "completions/antfly.bash"
   zsh_completion "completions/antfly.zsh"
   fish_completion "completions/antfly.fish"
-  depends_on formula: [
-      "antflycli",
-    ]
 
   on_macos do
     url "https://releases.antfly.io/antfly/v0.0.0-dev2/antfly_0.0.0-dev2_Darwin_all.tar.gz"
-    sha256 "8a6ec1c1b4e769e11b9a6fcdf4a65309c3581454cc967422a992730cab91d14c"
+    sha256 "5cc58f117747c9696c9a784f4323e8c7cd1115e5db1c700b02315916e91efdab"
   end
 
   on_linux do
     on_intel do
       url "https://releases.antfly.io/antfly/v0.0.0-dev2/antfly_0.0.0-dev2_Linux_x86_64.tar.gz"
-      sha256 "15185779df66097b458dad621a8112944958a0b486a64311e828d7d864b683c5"
+      sha256 "456d7c6489fda52ccc7b409d63130f1d8ebef3e311ca7823b934c722b2a3c213"
     end
     on_arm do
       url "https://releases.antfly.io/antfly/v0.0.0-dev2/antfly_0.0.0-dev2_Linux_arm64.tar.gz"
-      sha256 "987f1959745db57f4ae9d3dd12d38f457a231c1d390be152d2b0626d376b57cf"
+      sha256 "87216b1b7b1ef6a617c80fd1bdd081bc209c0cbf09918c7c60c11e73757019bd"
     end
   end
 
