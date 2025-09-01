@@ -18,7 +18,8 @@ jobs:
         os:
           - macos-13 # amd64
           - macos-latest # arm64
-          - ubuntu-latest # amd64
+          # TODO (ajr) Casks don't work on Linux afaict
+          # - ubuntu-latest # amd64
         product:
           - antfly
           - antflycli
@@ -29,6 +30,6 @@ jobs:
       - name: Tap antflydb/antfly
         run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} tap antflydb/antfly .
       - name: Install ${{ matrix.product }} cask
-        run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} install --casks ${{matrix.product }}
+        run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} install ${{matrix.product }}
       - name: Test ${{ matrix.product }} cask
         run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} test ${{ matrix.product }}
