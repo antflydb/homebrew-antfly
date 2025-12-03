@@ -3,7 +3,7 @@ cask "antfly-onnx" do
   name "antfly-onnx"
   desc "antfly with ONNX Runtime - includes ML inference support for embeddings"
   homepage "https://docs.antfly.io"
-  version "0.0.0-dev24"
+  version "0.0.0-dev25"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "antfly-onnx" do
   on_macos do
     on_intel do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-onnx_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "48db9d7741acb8fca31d7085efcec040d37f662a55f020c9cdc7ce3e5da6cc72"
+      sha256 "8952aa496812df0190cb23839cbaf65d50fc0808f439ad87bc85d77893d3e8e1"
     end
     on_arm do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-onnx_#{version}_Darwin_arm64.tar.gz"
-      sha256 "2c2924b16a2f52e0246351730b66c994efa1f7e17cc80940ec10d191f9bd300d"
+      sha256 "0978d1d697152f1d1faf2b564391e71e3120ab0057e0d75aa9ba8b1e14e23e1c"
     end
   end
 
   on_linux do
     on_intel do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-onnx_#{version}_Linux_x86_64.tar.gz"
-      sha256 "985b9e45353fdcc79696d5f2379ca5ec3808b3c8be56d4c9875d4e2fb4d34160"
+      sha256 "582f28a638740644a08c0407abb27c694995b2db18766779bb5cf1c7e7f3797f"
     end
     on_arm do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-onnx_#{version}_Linux_arm64.tar.gz"
-      sha256 "18017b4369e4bbad040b2a50d2ad272fc472693da15a6a24a2c9b1b934b28faa"
+      sha256 "521d61b8d07160283a3d1a40fb1cbf7b2aad20651ca8c7a9797471b3afd1001d"
     end
   end
 
