@@ -3,7 +3,7 @@ cask "antflycli" do
   name "antflycli"
   desc "antflycli - A command line interface for interacting with AntfyDB"
   homepage "https://antfly.io"
-  version "0.0.0-dev44"
+  version "0.0.0-dev46"
 
   livecheck do
     skip "Auto-generated on release."
@@ -16,17 +16,17 @@ cask "antflycli" do
 
   on_macos do
     url "https://releases.antfly.io/antfly/v#{version}/antfly_#{version}_Darwin_all.tar.gz"
-    sha256 "b214359fa6d7a0358625176f82b8d10be862657a36ba0aa126a4266f43fdf055"
+    sha256 "bc9b00b032b9ee297e69b3e7a427cc1376e4c3924de5fe32deb118d5cfa49db2"
   end
 
   on_linux do
     on_intel do
       url "https://releases.antfly.io/antfly/v#{version}/antfly_#{version}_Linux_x86_64.tar.gz"
-      sha256 "66cc9e3ce908e9b577f42a7f96f201a0a9977e3ecda5b11c22b0e1e19ff28782"
+      sha256 "bbfc9f717d58f206012ae201b0a012e320cbcab3d763eecc0ab026087cebd50b"
     end
     on_arm do
       url "https://releases.antfly.io/antfly/v#{version}/antfly_#{version}_Linux_arm64.tar.gz"
-      sha256 "302c5311b1cb98940a4331608985b1edf18dee248238fcd3b88dce097dbd5221"
+      sha256 "a2febdaa8e89df8d176f4e9533d46fe51e07a8ee69c8ae9f504c08010f50f0e2"
     end
   end
 
