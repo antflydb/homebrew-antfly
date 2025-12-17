@@ -3,7 +3,7 @@ cask "termite-onnx" do
   name "termite-onnx"
   desc "Termite with ONNX Runtime - includes ML inference acceleration"
   homepage "https://docs.antfly.io/docs/guides/termite"
-  version "0.0.0-dev21"
+  version "0.0.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,23 +13,23 @@ cask "termite-onnx" do
 
   on_macos do
     on_intel do
-      url "https://github.com/antflydb/antfly/releases/download/v#{version}/termite-onnx_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "b7a6fe4d6612e3b8d76b9dacafa053a24eac04c9b4cf134ebd0acaa54a3c5243"
+      url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-onnx_#{version}_Darwin_x86_64.tar.gz"
+      sha256 "4ac0f9a9e4e84bf36974029a6f454380747df7d1859525ea8dc9e68983390274"
     end
     on_arm do
-      url "https://github.com/antflydb/antfly/releases/download/v#{version}/termite-onnx_#{version}_Darwin_arm64.tar.gz"
-      sha256 "e73344d4f3fabb85af8cadc905f799356d9790396cc31611953fb2445419a165"
+      url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-onnx_#{version}_Darwin_arm64.tar.gz"
+      sha256 "349937c6c90da2280e2d6d8a7ab957631728d0999d0ed0dcf5f41cd49ac3df77"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/antflydb/antfly/releases/download/v#{version}/termite-onnx_#{version}_Linux_x86_64.tar.gz"
-      sha256 "d6846bbf949454bf7580283d2946b59d2ab1a229677b191746248748150b78ee"
+      url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-onnx_#{version}_Linux_x86_64.tar.gz"
+      sha256 "456c63452cbdfd19b45ab4774d2fe63eb943c5727948791c1579539814323a69"
     end
     on_arm do
-      url "https://github.com/antflydb/antfly/releases/download/v#{version}/termite-onnx_#{version}_Linux_arm64.tar.gz"
-      sha256 "e4e53be9f82c7694a6c159f7630dc7e9ffd177d60cac9bf3f9d2c62ae8c25026"
+      url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-onnx_#{version}_Linux_arm64.tar.gz"
+      sha256 "85c64ab226e2f706ce0330c9d3bae6c86834c9b3a21ff2201d80eee9f13c4ec0"
     end
   end
 
