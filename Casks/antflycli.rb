@@ -16,17 +16,17 @@ cask "antflycli" do
 
   on_macos do
     url "https://releases.antfly.io/antfly/v#{version}/antfly_#{version}_Darwin_all.tar.gz"
-    sha256 "9efcbf1a18064171fadafe616c926a9d2c88f5ac16e2e1be3552e2ae188f6bda"
+    sha256 "c2928fd0b3cdf57c16a037dc34dfb6f21174cca94f4241a60cffcf2270f5e94b"
   end
 
   on_linux do
     on_intel do
       url "https://releases.antfly.io/antfly/v#{version}/antfly_#{version}_Linux_x86_64.tar.gz"
-      sha256 "8ab2320dadd597f8abbf4109561df329d1b61f93948bec2f03e2ddcbbbb79800"
+      sha256 "38605e00daf70e575f0a069b18f13549ef9961a61cd47e6ac557e6030705407b"
     end
     on_arm do
       url "https://releases.antfly.io/antfly/v#{version}/antfly_#{version}_Linux_arm64.tar.gz"
-      sha256 "5bf5773c3dd7b358d560ea3012ddb8e9231ca9efd4c2a2af75a265d68da48bcc"
+      sha256 "10ca2927810266514354adf8d5d96e7492240051d13ced577a4dfdf2084602fd"
     end
   end
 
