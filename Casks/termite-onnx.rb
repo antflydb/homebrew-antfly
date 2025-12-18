@@ -14,22 +14,22 @@ cask "termite-onnx" do
   on_macos do
     on_intel do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-onnx_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "4ac0f9a9e4e84bf36974029a6f454380747df7d1859525ea8dc9e68983390274"
+      sha256 "04e6c46df248613f6937d8b5725c4eabae9ef83c42f908b3fb50e81e049cf834"
     end
     on_arm do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-onnx_#{version}_Darwin_arm64.tar.gz"
-      sha256 "349937c6c90da2280e2d6d8a7ab957631728d0999d0ed0dcf5f41cd49ac3df77"
+      sha256 "4d761a4b15ab4a2d31bb574a73b1e8e77b9e76cf6f3a859903dc53040be5af2c"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-onnx_#{version}_Linux_x86_64.tar.gz"
-      sha256 "456c63452cbdfd19b45ab4774d2fe63eb943c5727948791c1579539814323a69"
+      sha256 "cdd3f7228c7ef2d2b0b43c60ab361348fe8a0de12195fe6dded1374fcc51e8f0"
     end
     on_arm do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-onnx_#{version}_Linux_arm64.tar.gz"
-      sha256 "85c64ab226e2f706ce0330c9d3bae6c86834c9b3a21ff2201d80eee9f13c4ec0"
+      sha256 "4f7949a56ceda6c3f899c12be46532d9a9321bed0d1b9741def07c0dac8485b2"
     end
   end
 
