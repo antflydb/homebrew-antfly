@@ -17,22 +17,22 @@ cask "antfly-onnx" do
   on_macos do
     on_intel do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-onnx_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "095efcddc412fc7f89552e85c1f4eda869155ea5cbc1ec38c1b2cbfd03cd6c7c"
+      sha256 "94bfc76764e30561fb8d199721e832912d043a073c64ae2ce266e8fa209552bf"
     end
     on_arm do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-onnx_#{version}_Darwin_arm64.tar.gz"
-      sha256 "9a0c52b823e5d925483cda4dd67b4a9e260a24db44e8cee0c791807bab878d68"
+      sha256 "b217e80b765291ddee10dce73311397471c233752114cdbbd030021d4989e264"
     end
   end
 
   on_linux do
     on_intel do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-onnx_#{version}_Linux_x86_64.tar.gz"
-      sha256 "3cb209336a92541efa830fd8e5009703ddc95a9114d5b59ff845225829ba76ec"
+      sha256 "261ecb0dee9e1d606b78cf968e33793b114506d535b364a93cd8df33289f01c4"
     end
     on_arm do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-onnx_#{version}_Linux_arm64.tar.gz"
-      sha256 "30567f8d771e474842cf8fe8e942fab403af21d306428fea7cc78f7b5095a37c"
+      sha256 "e440990bdaf4d9c57e36b747c0d839209f42a982dee12bb2bc0cceaf1787c309"
     end
   end
 
