@@ -13,17 +13,17 @@ cask "termite" do
 
   on_macos do
     url "https://github.com/antflydb/termite/releases/download/v#{version}/termite_#{version}_Darwin_all.tar.gz"
-    sha256 "21319f860912e8e5b00c92bf77100a7aac0343553185ec79126889d65c0cae04"
+    sha256 "a944d39470e3350a665fd50ebedf968cff453b59a7416a8bfbf37ec052e50246"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite_#{version}_Linux_x86_64.tar.gz"
-      sha256 "8f231babb5a172ca32ced6c5bc41f5441a7bd3347de4282a04ad28270671ef3d"
+      sha256 "3a2f0d8c699b57ae9e406faab514f419f24fb26762c830e5bc212a5e22068ff4"
     end
     on_arm do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite_#{version}_Linux_arm64.tar.gz"
-      sha256 "9ed72dea632b4493034aa3ee91306fd0ae36f42f66a8092d589f9ced1d31594b"
+      sha256 "a697f5c2b47282bb31233ac7b4913196168ec8576f08cdfc39027556042bdd40"
     end
   end
 
