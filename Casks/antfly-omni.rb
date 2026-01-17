@@ -3,7 +3,7 @@ cask "antfly-omni" do
   name "antfly-omni"
   desc "antfly with ONNX Runtime + XLA - multi-backend ML inference"
   homepage "https://docs.antfly.io"
-  version "0.0.3"
+  version "0.0.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "antfly-omni" do
   on_macos do
     on_intel do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-omni_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "04a81d47746a028834cd9fc6c285f2b60d3bf9d5e1caa7aa99b7f4ff9b26945c"
+      sha256 "b2db0cba4fcb986e2c366c0b3acc793a36a6fdb9e4525a72da05694922d31056"
     end
     on_arm do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-omni_#{version}_Darwin_arm64.tar.gz"
-      sha256 "861d22511103d5ed5fb4455bc3bfc7884fc45f6240df68fbbc58db7ddc717cbb"
+      sha256 "070f74108807deb81bb4857377ab0609e1c7dae73b9e941824c637813cc74ad0"
     end
   end
 
   on_linux do
     on_intel do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-omni_#{version}_Linux_x86_64.tar.gz"
-      sha256 "b8ff40a23b39052b325776b147966813251f4bd921b69e2adaa6433365362ea1"
+      sha256 "f9449c59062398e9b2043afbefcd516abb882d43d19382b1e87d00fe248efa26"
     end
     on_arm do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-omni_#{version}_Linux_arm64.tar.gz"
-      sha256 "9cdae25576e1522d2df730d15ccf3eea61ec895755cb13893c6cc8b01b5229e0"
+      sha256 "4904fbe2d9bc5d3f92c553427f8cd7bedc4c816926a6422811edf2dec93edc99"
     end
   end
 
