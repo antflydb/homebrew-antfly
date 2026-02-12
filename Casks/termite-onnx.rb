@@ -3,7 +3,7 @@ cask "termite-onnx" do
   name "termite-onnx"
   desc "Termite with ONNX Runtime - includes ML inference acceleration"
   homepage "https://docs.antfly.io/docs/guides/termite"
-  version "0.0.2"
+  version "0.0.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "termite-onnx" do
   on_macos do
     on_intel do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-onnx_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "4625d239ae10e4a2fafa14f24dd86130de18c1ea0f32eb7aed089c458124218b"
+      sha256 "369fabc8f703c28af6c6fe600cb8a7dc8b91cd252126eeaa6913de10c23c7a71"
     end
     on_arm do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-onnx_#{version}_Darwin_arm64.tar.gz"
-      sha256 "aeb8ba2356fda58702b81ac82216953bc37fa2fa167a9b6778a8070af42cabe8"
+      sha256 "96b01dbf682da6a6ef783786341081923239c3877a5f714c5597a4764ad9fe7d"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-onnx_#{version}_Linux_x86_64.tar.gz"
-      sha256 "9e09c1933ef059cb316b924274db477b2098c03b094ab3c17fbf0d9ec2ae29e6"
+      sha256 "d5c9e7deafb513104ed20a945fee29c9aaeebb2dde250b0a5c65272d1e869eef"
     end
     on_arm do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-onnx_#{version}_Linux_arm64.tar.gz"
-      sha256 "bd9a60777a7f6d8d4bd085b263ca5da679cc2df0a571918e069d63c91d00f081"
+      sha256 "1c717d2c4d0046bc7143ebfd99b6eabda78a0795acc677e6aaa38adefc2ad516"
     end
   end
 
