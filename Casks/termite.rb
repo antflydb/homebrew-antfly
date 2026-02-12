@@ -3,7 +3,7 @@ cask "termite" do
   name "termite"
   desc "Termite - ML inference service for embeddings, chunking, and reranking"
   homepage "https://docs.antfly.io/docs/guides/termite"
-  version "0.0.2"
+  version "0.0.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,17 +13,17 @@ cask "termite" do
 
   on_macos do
     url "https://github.com/antflydb/termite/releases/download/v#{version}/termite_#{version}_Darwin_all.tar.gz"
-    sha256 "2cceb3d05638dd55266d09bd69a92f3f05bd7ae2f45392bba43ef28b3da4ae44"
+    sha256 "2597a7b08036a5129d959a3f8afa7c0b6f6a8bddf78f9e21025be57fbb27f8e1"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite_#{version}_Linux_x86_64.tar.gz"
-      sha256 "d30b56a3a3e4bf38c5f1fcf393ec63ef0541fe4b9786a373cc01448b4fbe6dcb"
+      sha256 "2e9cba1aa25847941414fd3132989cae3e76ddb298ccd07391032d95cccc810b"
     end
     on_arm do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite_#{version}_Linux_arm64.tar.gz"
-      sha256 "f6924503edf27c35f0d6ff5af7abbe5f0e247c9d76caaaa2d54337dd7ac3088a"
+      sha256 "ac9d57cae49a8d48e153cc936dd93b254b851d49cf99fd37f64e755aad1ef901"
     end
   end
 
