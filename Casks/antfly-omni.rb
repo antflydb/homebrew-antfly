@@ -3,7 +3,7 @@ cask "antfly-omni" do
   name "antfly-omni"
   desc "antfly with ONNX Runtime + XLA - multi-backend ML inference"
   homepage "https://docs.antfly.io"
-  version "0.0.10"
+  version "0.0.11"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,18 +17,18 @@ cask "antfly-omni" do
   on_macos do
     on_arm do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-omni_#{version}_Darwin_arm64.tar.gz"
-      sha256 "477f73a61b0b0df2ef8a0c92af69180ea2b35b41e3e22f2932835599c80efd47"
+      sha256 "0f39c044390106378a824fadd471a8fb2fcf48fb7058f8a572a176d05e879390"
     end
   end
 
   on_linux do
     on_intel do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-omni_#{version}_Linux_x86_64.tar.gz"
-      sha256 "d8cf1feb00790651d0a13d69f641a15e8f29b18323bfa0a812d2beb9b18c41ff"
+      sha256 "8bcb13800ba0a304710b05b0b3757331576546f0b0e813b6e0fda382d5940b07"
     end
     on_arm do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-omni_#{version}_Linux_arm64.tar.gz"
-      sha256 "0f483ee913e004459329abc8c5e9a0480df3f85007319cc6e1fe07dacdd873a0"
+      sha256 "92abd34c962ed0eae3c2e6bf5b2867235b54f07292c77fc9a825486e82153c74"
     end
   end
 
@@ -49,7 +49,7 @@ cask "antfly-omni" do
     "Bundled libraries are auto-discovered from lib/ next to the binary."
     ""
     "Backend priority can be configured via TERMITE_BACKEND_PRIORITY env var:"
-    "  export TERMITE_BACKEND_PRIORITY="onnx,xla,go""
+    "  export TERMITE_BACKEND_PRIORITY=onnx,xla,go"
     ""
     "For the standard version without ML dependencies, use:"
     "  brew install --cask antfly"
