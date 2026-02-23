@@ -3,7 +3,7 @@ cask "termite-omni" do
   name "termite-omni"
   desc "Termite with ONNX Runtime + XLA - multi-backend ML inference"
   homepage "https://docs.antfly.io/docs/guides/termite"
-  version "0.0.3"
+  version "0.0.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,30 +12,25 @@ cask "termite-omni" do
   binary "termite"
 
   on_macos do
-    on_intel do
-      url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-omni_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "245fcea2e69e5f35feb198f7fa7d355c6ff4382ed370be87fb39df740afda335"
-    end
     on_arm do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-omni_#{version}_Darwin_arm64.tar.gz"
-      sha256 "8b7d223798d49c4d3f58ea76f498b15fe93a40cd363f8ed07880a722538055ec"
+      sha256 "6f7442b3111c7d83a9c358247eec780892002b0c64d3dae752b73c26ce81df49"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-omni_#{version}_Linux_x86_64.tar.gz"
-      sha256 "078557d752c60e61cc90c7ecc30b302b3c77a7e7cd9c2947a813fe7f1ca4926b"
+      sha256 "efc092c9f88ccb471050f2979418b3744174c8b7ee0370778e51a6efdf041d78"
     end
     on_arm do
       url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-omni_#{version}_Linux_arm64.tar.gz"
-      sha256 "831332f7fb47daf9abe4c5acee2da8f72aa44137358848529aad666e99a2bd5d"
+      sha256 "577659300ab45300c7a90d3292c881abe55388ca6be07263217363e43d6b55d4"
     end
   end
 
   conflicts_with cask: [
       "termite",
-      "termite-onnx",
     ]
 
   postflight do
@@ -53,9 +48,8 @@ cask "termite-omni" do
     "Backend priority can be configured in termite.yaml:"
     "  backend_priority: ["onnx:coreml", "xla:cpu", "go"]"
     ""
-    "For single-backend versions:"
-    "  brew install --cask termite      # Pure Go (no acceleration)"
-    "  brew install --cask termite-onnx # ONNX Runtime only"
+    "For the standard version without ML dependencies, use:"
+    "  brew install --cask termite"
   end
 
   # No zap stanza required
