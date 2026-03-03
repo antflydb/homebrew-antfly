@@ -3,7 +3,7 @@ cask "termite-omni" do
   name "termite-omni"
   desc "Termite with ONNX Runtime + XLA - multi-backend ML inference"
   homepage "https://docs.antfly.io/docs/guides/termite"
-  version "0.0.4"
+  version "0.0.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,19 +13,19 @@ cask "termite-omni" do
 
   on_macos do
     on_arm do
-      url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-omni_#{version}_Darwin_arm64.tar.gz"
-      sha256 "6f7442b3111c7d83a9c358247eec780892002b0c64d3dae752b73c26ce81df49"
+      url "https://releases.antfly.io/termite/v#{version}/termite-omni_#{version}_Darwin_arm64.tar.gz"
+      sha256 "bcf4a45f41c5258f8aaeb524846bafddcc8762b14161099161f24a4a7f24bc05"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-omni_#{version}_Linux_x86_64.tar.gz"
-      sha256 "efc092c9f88ccb471050f2979418b3744174c8b7ee0370778e51a6efdf041d78"
+      url "https://releases.antfly.io/termite/v#{version}/termite-omni_#{version}_Linux_x86_64.tar.gz"
+      sha256 "8749efb39434d99646e8fa86295179df071781c7cc9558f687b4dd48e13415b6"
     end
     on_arm do
-      url "https://github.com/antflydb/termite/releases/download/v#{version}/termite-omni_#{version}_Linux_arm64.tar.gz"
-      sha256 "577659300ab45300c7a90d3292c881abe55388ca6be07263217363e43d6b55d4"
+      url "https://releases.antfly.io/termite/v#{version}/termite-omni_#{version}_Linux_arm64.tar.gz"
+      sha256 "3b11ea99b39af295587ee610aeee15e89977c2095b564250c32fe477cb888ffb"
     end
   end
 
@@ -46,7 +46,7 @@ cask "termite-omni" do
     "Bundled libraries are auto-discovered from lib/ next to the binary."
     ""
     "Backend priority can be configured in termite.yaml:"
-    "  backend_priority: ["onnx:coreml", "xla:cpu", "go"]"
+    "  backend_priority: ['onnx:coreml', 'xla:cpu', 'go']"
     ""
     "For the standard version without ML dependencies, use:"
     "  brew install --cask termite"
