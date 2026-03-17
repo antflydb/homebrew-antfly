@@ -42,6 +42,7 @@ cask "antfly-onnx" do
 
   postflight do
     if OS.mac?
+      system_command "/bin/chmod", args: ["-R", "u+rw", "#{staged_path}/lib"]
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/antfly"]
       # Also clear quarantine on bundled libraries
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/lib"]
