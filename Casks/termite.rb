@@ -3,7 +3,7 @@ cask "termite" do
   name "termite"
   desc "Termite - ML inference service with ONNX Runtime + XLA multi-backend inference"
   homepage "https://docs.antfly.io/docs/guides/termite"
-  version "0.0.8"
+  version "0.0.9"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,18 +14,18 @@ cask "termite" do
   on_macos do
     on_arm do
       url "https://releases.antfly.io/termite/v#{version}/termite-omni_#{version}_Darwin_arm64.tar.gz"
-      sha256 "44f3ce8b350264614544b32134575f98996a82c341aff7fb6bd63c0ea734422f"
+      sha256 "268de8cba4c3befa02f84a51a51537db3aeed5149a7324ca2b0ec2d11e9e704b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://releases.antfly.io/termite/v#{version}/termite-omni_#{version}_Linux_x86_64.tar.gz"
-      sha256 "eff2b9725a7a960ec99f2e9e67f36bc7eaa5a0fa76225aacc8179842e5113a86"
+      sha256 "8ebef1b235db267e69a3d69e7c54d2bbc4c7286e464910a457eb873af6b5167a"
     end
     on_arm do
       url "https://releases.antfly.io/termite/v#{version}/termite-omni_#{version}_Linux_arm64.tar.gz"
-      sha256 "ac3d249d190d0ccf567063f50b7f1c55bf6842102e9cc63cdb06d730fc923b14"
+      sha256 "09197934857b285fb812c7db08d330e7aafca03e759fe6c71b9ab40b543f7738"
     end
   end
 
