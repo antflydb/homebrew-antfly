@@ -14,18 +14,18 @@ cask "termite" do
   on_macos do
     on_arm do
       url "https://releases.antfly.io/termite/v#{version}/termite-omni_#{version}_Darwin_arm64.tar.gz"
-      sha256 "ae0ed52ec4da9e1cd1c0232311e68da35115818e5a0e8483ae3fde5b59c4bfe0"
+      sha256 "96ed28e34781a24084048b4e80f16d0f669847e92b2414d6843e8baf0334766d"
     end
   end
 
   on_linux do
     on_intel do
       url "https://releases.antfly.io/termite/v#{version}/termite-omni_#{version}_Linux_x86_64.tar.gz"
-      sha256 "a1de203681b1abd70d672fa7cf94ed5f50e29dceaa526156dabfcf5067b68f66"
+      sha256 "d6cd1926b974315550d2568487a41f417e924473d7ccb60f5020d1e86efc8cb7"
     end
     on_arm do
       url "https://releases.antfly.io/termite/v#{version}/termite-omni_#{version}_Linux_arm64.tar.gz"
-      sha256 "b546a790fa2f5e01013db8400a96f94088664d9980bf743f316f0777edfa2182"
+      sha256 "3690ec8fc6cc646668b555b51f71755dde7f094e75460c0522a79d37920752d2"
     end
   end
 
