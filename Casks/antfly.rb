@@ -3,7 +3,7 @@ cask "antfly" do
   name "antfly"
   desc "antfly - AntflyDB with ONNX Runtime + XLA multi-backend ML inference"
   homepage "https://docs.antfly.io"
-  version "0.1.2"
+  version "0.1.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,18 +14,18 @@ cask "antfly" do
   on_macos do
     on_arm do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-omni_#{version}_Darwin_arm64.tar.gz"
-      sha256 "b6d66ab290359faebfa96c625ba7b0c989e17691d3f1aa5e6d5bd416b4ed187e"
+      sha256 "1adb1bd7fd6d767fb3e7aa6b3412169b6a6d2e2cbb5a5afd13cc6e08771a7786"
     end
   end
 
   on_linux do
     on_intel do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-omni_#{version}_Linux_x86_64.tar.gz"
-      sha256 "dd63ce6700d0409833c3e7d415aa2024ec8613add642ea182a13d388d87e82df"
+      sha256 "8db909511060f027de987c65afa4ae017c61f4c1712fff65a57bf26646fd0568"
     end
     on_arm do
       url "https://releases.antfly.io/antfly/v#{version}/antfly-omni_#{version}_Linux_arm64.tar.gz"
-      sha256 "f25241be96b145ecb20db583d125d6f044ea0eb942858de9f2b0b5aef5a33b2a"
+      sha256 "eef1693ef3de2ef860c421a2e90a7f351be3a48946aca72f06b4b0fb947520d5"
     end
   end
 
