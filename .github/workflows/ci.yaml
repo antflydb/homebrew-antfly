@@ -26,6 +26,12 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
+      - name: Label Homebrew archive downloads as CI
+        run: |
+          curlrc="$RUNNER_TEMP/antfly-homebrew-curlrc"
+          printf '%s\n' 'header = "X-Antfly-Audience: ci"' >"$curlrc"
+          chmod 600 "$curlrc"
+          echo "HOMEBREW_CURLRC=$curlrc" >>"$GITHUB_ENV"
       - name: Tap antflydb/taps
         run: ${{ runner.os == 'Linux' && '/home/linuxbrew/.linuxbrew/bin/brew' || 'brew' }} tap antflydb/taps .
       - name: Trust antfly formula
